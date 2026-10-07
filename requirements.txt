@@ -1,0 +1,6 @@
+# Core aplikasi
+streamlit>=1.30
+cryptography>=41.0
+
+# Pengujian
+pytest>=7.4
