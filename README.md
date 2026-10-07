@@ -10,18 +10,24 @@ PESAN → Vigenère → Transposition → AES-256-GCM → CIPHERTEXT
 
 ## Daftar Isi
 
-1. [Cara Menjalankan](#1-cara-menjalankan)
-2. [Cara Pakai (3 Langkah)](#2-cara-pakai-3-langkah)
-3. [Cara Kerja Enkripsi](#3-cara-kerja-enkripsi)
-4. [Cara Kerja Dekripsi](#4-cara-kerja-dekripsi)
-5. [Penjelasan Tiap Lapisan](#5-penjelasan-tiap-lapisan)
-6. [Modifikasi Transposition (Keunikan Project)](#6-modifikasi-transposition-keunikan-project)
-7. [Manajemen Kunci AES Session](#7-manajemen-kunci-aes-session)
-8. [Penggunaan RSA dan SHA-256](#8-penggunaan-rsa-dan-sha-256)
-9. [Testing](#9-testing)
-10. [Struktur Project](#10-struktur-project)
-11. [Keterbatasan](#11-keterbatasan)
-12. [Ringkasan untuk Presentasi](#12-ringkasan-untuk-presentasi)
+- [🔐 Hybrid Encryption \& Decryption](#-hybrid-encryption--decryption)
+  - [Daftar Isi](#daftar-isi)
+  - [1. Cara Menjalankan](#1-cara-menjalankan)
+  - [2. Cara Pakai (3 Langkah)](#2-cara-pakai-3-langkah)
+    - [Langkah 1: Tab "1. Key Management" (dilakukan sekali di awal)](#langkah-1-tab-1-key-management-dilakukan-sekali-di-awal)
+    - [Langkah 2: Tab "2. Encrypt"](#langkah-2-tab-2-encrypt)
+    - [Langkah 3: Tab "3. Decrypt"](#langkah-3-tab-3-decrypt)
+    - [Tab "Cara Kerja"](#tab-cara-kerja)
+  - [3. Cara Kerja Enkripsi](#3-cara-kerja-enkripsi)
+  - [4. Cara Kerja Dekripsi](#4-cara-kerja-dekripsi)
+  - [5. Penjelasan Tiap Lapisan](#5-penjelasan-tiap-lapisan)
+  - [6. Modifikasi Transposition (Keunikan Project)](#6-modifikasi-transposition-keunikan-project)
+  - [7. Manajemen Kunci AES Session](#7-manajemen-kunci-aes-session)
+  - [8. Penggunaan RSA dan SHA-256](#8-penggunaan-rsa-dan-sha-256)
+  - [9. Testing](#9-testing)
+  - [10. Struktur Project](#10-struktur-project)
+  - [11. Keterbatasan](#11-keterbatasan)
+  - [12. Ringkasan untuk Presentasi](#12-ringkasan-untuk-presentasi)
 
 ---
 
@@ -31,7 +37,7 @@ Syarat: Python 3.10 atau lebih baru.
 
 ```bash
 # 1. Masuk ke folder project
-cd C:\data\AINGMAUNGG\hash
+cd hash
 
 # 2. Install dependency
 pip install -r requirements.txt
