@@ -133,7 +133,7 @@ Dengan modifikasi ini, enkripsi dan dekripsi **benar-benar reversibel** dan kunc
 - **Authenticated encryption**: perubahan satu bit pada ciphertext atau nonce akan membuat dekripsi gagal (InvalidTag).
 - Kunci AES selalu 32 byte.
 
-### D. RSA (RSA-OAEP) — mengamankan AES session key saja
+### D. RSA (RSA-OAEP): mengamankan AES session key saja
 
 - **Tidak mengenkripsi seluruh plaintext.**
 - Menggunakan **RSA-2048** dengan **OAEP padding (MGF1 + SHA-256)**, padding yang aman dan standar, bukan textbook RSA.
